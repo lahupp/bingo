@@ -75,7 +75,6 @@ img, video{
 .nav-menu a{
     font-weight: 400;
     letter-spacing: 0.1rem;
-    border-bottom: 1px solid #ffffff;
     transition: all ease 0;
 }
 
@@ -94,16 +93,19 @@ img, video{
     z-index: 10;
 }
 
-.hero-nav .logo a,
-.hero-nav .nav-menu a {
- color: white;
+.hero-nav, .logo a,
+.hero-nav, .other-nav,
+.nav-menu a {
+ color: rgb(141, 122, 122);
 }
 
-.hero-nav .nav-menu a:hover{
-border-bottom:1px solid #ffffff
+.hero-nav, .other-nav,
+.nav-menu a:hover{
+    border-bottom:1px solid #ffffff
 }
 
-.hero-nav .nav-menu a{
+.hero-nav, .other-nav,
+.nav-menu a{
     border-bottom: 1p solid rgba(0, 0, 0, 0);
 }
 
@@ -195,6 +197,51 @@ border-bottom:1px solid #ffffff
 .hero-button:active{
     background: rgba(0, 0, 0, 0,3);
 }
+
+/* about page css*/
+.about-page{
+    padding: 2rem 1rem 10rem 1rem;
+    display:grid;
+    grid-template-columns: 1fr;
+    height: 100;
+}
+
+.about-text {
+    margin: 0 auto;
+}
+
+.about-text h1{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.about-img img{
+    height: 60%;
+    object-fit: cover;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+
+.about-social {
+    display:flex;
+    justify-content: start;
+}
+
+.about-social a{
+    color: black;
+    padding: 0 1rem 1rem 1rem;
+}
+
+
+/*Other navbar styles
+.other-nav{
+    background: lightblue;
+    grid-column: 1/-1;
+    grid-row: 1/ -1;
+    background: none;
+    align-content: top;
+    z-index: 10;
+}*/
  
 /* foter nav extra styles */
 .footer-logo {
@@ -247,6 +294,22 @@ border-bottom:1px solid #ffffff
         font-size: 2rem;
         line-height: 2rem;
     }
+
+    .about-page{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .about-text h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .about-text p {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
     .footer-nav {
         padding-top: 2rem;
       }
@@ -282,6 +345,16 @@ border-bottom:1px solid #ffffff
 
     .hero-nav{
         width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .about-text p {
+        font-size: 1.75rem;
+        line-height: 2rem;
     }
 
     .footer-nav{
